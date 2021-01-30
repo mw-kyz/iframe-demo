@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>main</title>
+	<style type="text/css">
+		
+	</style>
+</head>
+<body>
+	main
+	<iframe src="iframe.html" width="500" height="500"></iframe>
+	<script type="text/javascript">
+		var myName = 'main';
+		var iframe = document.getElementsByTagName('iframe')[0];
+		// iframe.onload = function() {
+		// 	console.log(iframe.contentWindow.myName);
+		// }
+		iframe.contentWindow.location = 'http://www.jd.com';
+	</script>
+</body>
+</html>

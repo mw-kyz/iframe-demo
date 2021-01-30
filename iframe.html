@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>iframe</title>
+</head>
+<body>
+	iframe
+	<iframe src="sub_iframe.html" width="400" height="400"></iframe>
+	<script type="text/javascript">
+		var myName = 'iframe';
+		var iframe = document.getElementsByTagName('iframe')[0];
+		// iframe.onload = function() {
+		// 	console.log(iframe.contentWindow.myName);
+		// 	console.log(window.parent.myName);
+		// }
+		window.parent.location = 'http:///www.baidu.com';
+	</script>
+</body>
+</html>

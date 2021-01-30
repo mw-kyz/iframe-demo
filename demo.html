@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>iframe</title>
+	<style type="text/css">
+		.edit-textarea {
+			width: 400px;
+			height: 400px;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="code-panel">
+			<form action="script.php" method="post" target="codesFrame">
+				<div class="hd">
+					<input type="submit" value="提交代码" class="submit-btn"/>
+				</div>
+				<div class="edit-panel">
+					<textarea name="codes" class="edit-textarea"></textarea>
+				</div>
+			</form>
+		</div>
+		<div class="iframe-wrap">
+			<iframe src="script.php" name="codesFrame"></iframe>
+		</div>
+	</div>
+</body>
+</html>
